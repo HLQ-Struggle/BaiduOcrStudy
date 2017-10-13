@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_top.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_slide_in_top.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_enter.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_popup_enter.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_in.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_fade_in.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_fade_out.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_fade_out.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_grow_fade_in_from_bottom.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_grow_fade_in_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_bottom.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_slide_out_bottom.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_popup_exit.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_popup_exit.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_in_bottom.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_slide_in_bottom.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_shrink_fade_out_from_bottom.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_shrink_fade_out_from_bottom.xml"
+    },
+    {
+        "merged": "F:\\HLQ_Study\\BaiduOcrStudy\\ocr_ui\\build\\intermediates\\res\\merged\\androidTest\\debug\\anim\\abc_slide_out_top.xml",
+        "source": "C:\\Users\\HLQ\\.android\\build-cache\\dd14f3d5f45ddb21299ca4c307baccae8c8cee4c\\output\\res\\anim\\abc_slide_out_top.xml"
+    }
+]
