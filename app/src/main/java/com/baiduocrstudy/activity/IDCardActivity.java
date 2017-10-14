@@ -9,6 +9,8 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -17,6 +19,7 @@ import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.baidu.ocr.sdk.OCR;
@@ -24,6 +27,7 @@ import com.baidu.ocr.sdk.OnResultListener;
 import com.baidu.ocr.sdk.exception.OCRError;
 import com.baidu.ocr.sdk.model.IDCardParams;
 import com.baidu.ocr.sdk.model.IDCardResult;
+import com.baidu.ocr.sdk.model.Location;
 import com.baidu.ocr.ui.camera.CameraActivity;
 import com.baiduocrstudy.R;
 
@@ -37,6 +41,7 @@ public class IDCardActivity extends AppCompatActivity {
     private static final int REQUEST_CODE_PICK_IMAGE_BACK = 202;
     private static final int REQUEST_CODE_CAMERA = 102;
     private TextView infoTextView;
+    private ImageView ivHeadShow;
 
     private AlertDialog.Builder alertDialog;
 
@@ -59,6 +64,8 @@ public class IDCardActivity extends AppCompatActivity {
 
         alertDialog = new AlertDialog.Builder(this);
         infoTextView = (TextView) findViewById(R.id.info_text_view);
+
+        ivHeadShow= (ImageView) findViewById(R.id.iv_head);
 
         findViewById(R.id.gallery_button_front).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -141,7 +148,7 @@ public class IDCardActivity extends AppCompatActivity {
         return file;
     }
 
-    private void recIDCard(String idCardSide, String filePath) {
+    private void recIDCard(String idCardSide, final String filePath) {
         IDCardParams param = new IDCardParams();
         param.setImageFile(new File(filePath));
         // 设置身份证正反面
@@ -156,6 +163,17 @@ public class IDCardActivity extends AppCompatActivity {
             public void onResult(IDCardResult result) {
                 if (result != null) {
                     alertText("", result.toString());
+                    int rectX = result.getAddress().getLocation().getWidth() + result.getAddress().getLocation().getLeft() + 10;
+                    int rectY = result.getName().getLocation().getTop();
+                    Location location = result.getIdNumber().getLocation();
+                    int height = location.getTop() - rectY - 20;
+                    int width = location.getWidth() + location.getLeft() - rectX + 40;
+                    Bitmap ocrBitmap = BitmapFactory.decodeFile(filePath);
+                    if (ocrBitmap != null) {
+                        Bitmap headBitmap = Bitmap.createBitmap(ocrBitmap, rectX, rectY, width, height, null,
+                                false);
+                        ivHeadShow.setImageBitmap(headBitmap);
+                    }
                 }
             }
 
